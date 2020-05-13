@@ -49,7 +49,7 @@ function update(changes, id, scheme) {
 
 function remove(id) {
   return findById(id).then((del) => {
-    console.log("findById then!", del);
+    console.log("findById .then!", del);
     return db("schemes")
       .where({ id })
       .del()
